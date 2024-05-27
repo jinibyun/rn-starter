@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet,View,Button,TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({ navigation }) => { // props.navigation is destructured to navigation
 
@@ -30,13 +30,13 @@ const HomeScreen = ({ navigation }) => { // props.navigation is destructured to 
         title="Go to Counter Demo"
         // onPress={() => console.log("Button pressed")}
         onPress={() => navigation.navigate('Counter')}
-      /> 
+      />
 
       <Button
         title="Go to Color Demo"
         // onPress={() => console.log("Button pressed")}
         onPress={() => navigation.navigate('Color')}
-      />  
+      />
 
       <Button
         title="Go to Square Demo"
@@ -48,6 +48,18 @@ const HomeScreen = ({ navigation }) => { // props.navigation is destructured to 
         title="Go to Text Demo"
         // onPress={() => console.log("Button pressed")}
         onPress={() => navigation.navigate('Text')}
+      />
+
+      <Button
+        title="Go to Box Demo"
+        // onPress={() => console.log("Button pressed")}
+        onPress={() => navigation.navigate('Box')}
+      />
+
+      <Button
+        title="Go to BoxEx Demo"
+        // onPress={() => console.log("Button pressed")}
+        onPress={() => navigation.navigate('BoxEx')}
       />
     </View>
   );
